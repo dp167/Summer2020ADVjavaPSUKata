@@ -1,5 +1,4 @@
 package edu.pdx.cs410J.dp6;
-
 /**
  * A class for getting started with a code kata
  *
@@ -7,10 +6,25 @@ package edu.pdx.cs410J.dp6;
  * class (and its tests).
  */
 public class Kata {
-                                                                                    
+  static char[] Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 
   public static void main(String[] args) {
-    System.err.println("Missing command line arguments");
-    System.exit(1);
+
+    String temp = args[0];
+    char abs = temp;
+    int ascii = Integer.parseInt(temp);
+    System.out.println(temp);
+
+
   }
 }
+/*
+
+  A
+ B B
+C   C
+
+J = direction down
+K = driection over  K = J - N
+
+ */
